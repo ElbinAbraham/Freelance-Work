@@ -1,0 +1,265 @@
+main, nav{
+    display: block;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+
+/* use this body styles in your code */
+body{
+    background-color: #fafdff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#slider{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+    top: 120px;
+}
+
+#slider canvas{
+    width:150%;
+    max-height:150%;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity:1;
+    filter: brightness(50%);
+    text-align: center;
+}
+
+#slider img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 80%;
+    position: relative;
+    z-index: 0;
+    display: block;
+
+}
+.img1{
+    display:none;
+    border:0;
+    opacity: 0;
+}
+
+#logo1{
+    display:block;
+}
+#slider-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1860px;
+    height: 100%;
+    margin: 0px auto;
+    z-index: 3;
+}
+
+#slider-content{
+    padding:0 10px;
+}
+
+/* changes in this will affect the elbin part */
+#slider-content h2{
+    font-family: serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: #fff;
+    line-height: 30px;
+    margin: 20px 0px 60px;
+    z-index: 5;
+    opacity: 1;
+}
+
+@media screen and (min-width:800px){
+    #slider-content h2{
+        font-size:110px;
+        line-height: 100px;
+    }
+}
+
+#slider-content span{
+    display: inline-block;
+    z-index: 999;
+    opacity: 1;
+}
+
+/* changes in this will affect the our products part */
+#slider-content .meta{
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    letter-spacing: 5px;
+    color:#f71008;
+    text-transform:uppercase;
+    position: relative;
+    font-weight:600;
+    opacity: 1;
+}
+
+@media screen and (min-width:800px){
+    #slider-content .meta{
+        font-size:13px;
+    }
+}
+
+#slider-content .meta::after{
+    content:"";
+    display:block;
+    position:absolute;
+    top :5px;
+    right: -55px;
+    width:45px;
+    height: 2px;
+    background-color:#c23a19;
+}
+
+/* changes in this will affect the cashewnut section */
+#slider-content #slide-status{
+    margin-top:10px;
+    font-family: serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:#fff;
+}
+
+@media screen and (min-width:800px){
+    #slider-content #slide-status{
+        font-size: 34px;
+    }
+}
+
+#pagination{
+    position:absolute;
+    top:50px;
+    transform: translateY(-50%);
+    right: 30px;
+    z-index: 6;
+}
+
+#pagination button{
+    display:block;
+    appearance: none;
+    border: 0;
+    width:16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    top:250px;
+    padding: 0;
+    margin: 30px 0;
+    cursor:pointer;
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    outline: none;
+}
+
+#pagination button:hover{
+    opacity: 0.5;
+}
+
+#pagination button.active{
+    opacity: 1;
+}
+
+#pagination button.active::before{
+    width:300%;
+    height: 300%;
+    opacity:1;
+}
+
+#pagination button::before{
+    content: "";
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 1px solid rgba(255,255,255,0.2);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.loading::before{
+  content:"";
+  position: fixed;  
+  z-index: 100000000;
+  top:0;
+  left:0;
+  width:100%;
+  background:black;
+
+}
+
+.loading::after{
+    content:"";
+    position:fixed;
+    z-index:100000000;
+    top:50%;
+    left:50%;
+    width:60px;
+    height:60px;
+    margin: -30px 0 0 -30px;
+    pointer-events:none;
+    border-radius: 50%;
+    opacity:0.4s;
+    background:white;
+    animation: loaderanimation 0.7s linear infinite alternate forwards;
+}
+
+@keyframes loaderanimation{
+    to{
+        opacity:1;
+        transform:scale3d(0.5,0.5,1);
+    }
+}
+
+#a, #b, #c, #d, #e{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container{
+    padding-top:50px;
+    display:flex;
+    max-height: 300px;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+.card{
+    border: black solid 1;
+    margin :10px;
+}
+
+.card-img{
+    width:300px;
+    height:200px;
+
+}
+
