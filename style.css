@@ -1,21 +1,53 @@
-main, nav{
-    display: block;
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+nav{
+    display: flex;
+    color: black;
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-size: 18px;
 }
 
+.logo{
+    padding-right: 13rem;
+    height: 30%;
+}
+.home,.about,.pro,.contact{
+    padding: 3rem 1rem 0 1rem;
+}
+.sellang{
+    right: 5rem;
+    top: 3rem;
+    position: absolute;
+}
+select{
+    border:1px black;
+    padding: 10px 20px;
+    border-radius:5px;
+  }
+  
+select:focus{
+    outline:none;
+}
 html{
     font-family: sans-serif;
 }
 
-body{
-    margin: 0;
-}
-
-
 /* use this body styles in your code */
 body{
     background-color: #fafdff;
+    color: white;
+    /* margin: 0 2% 0 2%; */
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 main{
@@ -23,6 +55,82 @@ main{
     width: 100%;
     height: 100vh;
 }
+  /* carousel section */
+  .wrapper{
+    display: flex;
+    max-width: auto;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .left,.right{
+    z-index: 10;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    z-index: -2;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
 
 #slider{
     width: 100%;
@@ -41,17 +149,20 @@ main{
     transform: translate(-50%, -50%);
     z-index: 2;
     opacity:1;
-    filter: brightness(50%);
+    filter: brightness(70%);
     text-align: center;
+    background-color:white;
 }
 
 #slider img{
-    width: 100%;
+    width: 65%;
     max-width: 100%;
     max-height: 80%;
     position: relative;
     z-index: 0;
-    display: block;
+    display: inline;
+    background-color: white;
+    
 
 }
 .img1{
@@ -67,8 +178,8 @@ main{
     position: relative;
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 1860px;
+    width: auto;
+    max-width: auto;
     height: 100%;
     margin: 0px auto;
     z-index: 3;
@@ -91,7 +202,7 @@ main{
     opacity: 1;
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width:320px){
     #slider-content h2{
         font-size:110px;
         line-height: 100px;
@@ -117,7 +228,7 @@ main{
     opacity: 1;
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width:320px){
     #slider-content .meta{
         font-size:13px;
     }
@@ -229,6 +340,7 @@ main{
     opacity:0.4s;
     background:white;
     animation: loaderanimation 0.7s linear infinite alternate forwards;
+    display:flex
 }
 
 @keyframes loaderanimation{
@@ -253,13 +365,187 @@ main{
 }
 
 .card{
-    border: black solid 1;
-    margin :10px;
+    border: black solid 0px;
+    padding: 10px;
+    padding-left: 1rem;
 }
 
 .card-img{
-    width:300px;
+    width:19rem;
     height:200px;
+    padding: 1px 2.3rem 0 0rem;
 
 }
+
+
+/* footer css */
+.content1{
+    position: bottom;
+    margin: 0px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content1 .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  .content1 .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  footer{
+    margin-top: 3rem;
+    position: bottom;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+  }
+  .main-content{
+    display: flex;
+  }
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  .box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #f7f7f7;
+  }
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .left .content .social{
+    margin: 20px 0 0 0;
+  }
+  .left .content .social a{
+    padding: 0 2px;
+  }
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #fefafa;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .left .content .social a span:hover{
+    background: #f12020;
+  }
+  .center .content .fas{
+    font-size: 1.4375rem;
+    background: #fdfafa;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .content .fas:hover{
+    background: #f12020;
+  }
+  .center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .center .content .phone{
+    margin: 15px 0;
+  }
+
+  .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+  }
+  .right form .msg{
+    margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+  }
+  .right form input:focus,
+  .right form textarea:focus{
+    outline-color: #3498db;
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btn{
+    margin-top: 10px;
+  }
+  .right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .right form .btn button:hover{
+    background: #000;
+    color: white;
+  }
+  .bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+  }
+  .bottom center span{
+    color: #656565;
+  }
+  .bottom center a{
+    color: #f12020;
+    text-decoration: none;
+  }
+  .bottom center a:hover{
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 900px) {
+    footer{
+      position: bottom;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
+
 
