@@ -1,18 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+
+nav{
+  background: #ffffff;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #040404;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: rgb(9, 9, 9);
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: rgb(13, 12, 12);
+  font-size: 22px;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #0c0c0c,
+                inset 0 0 10px #040404;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
 .flex{
   display: flex;
   flex-wrap: wrap;
 
 }
-nav{
+/* nav{
   display: flex;
   color: black;
   padding: 1rem;
-}
+} */
 a{
   text-decoration: none;
   color: black;
 }
-nav a:hover{
+/* nav a:hover{
   text-decoration: underline;
   font-size: 18px;
 }
@@ -30,8 +123,8 @@ nav a:hover{
 .sellang{
   right: 5%;
   top: 3rem;
-  position: absolute;
-}
+  position: absolute; 
+}*/
 select{
   border:1px black;
   padding: 10px 20px;
@@ -136,10 +229,18 @@ main{
   }
 }
 
+
+/* distortion slider */
+
+
+main{
+  margin-top:3rem;
+  margin-bottom:8rem;
+}
 #slider{
   width: 100%;
   height: 100%;
-  margin: 0px auto;
+  margin: 4rem 0rem 8rem 0rem;
   position: relative;
   top: 120px;
 }
@@ -253,7 +354,7 @@ main{
   right: -55px;
   width:45px;
   height: 2px;
-  background-color:#c23a19;
+  background-color:transparent;
 }
 
 /* changes in this will affect the cashewnut section */
@@ -271,6 +372,12 @@ main{
   }
 }
 
+@media screen and (max-width:700px){
+  #slider-title #slide-status{
+    font-size:14px;
+  }
+  
+}
 #pagination{
   position:absolute;
   top:50px;
@@ -362,29 +469,6 @@ background:black;
   }
 }
 
-#a, #b, #c, #d, #e{
-  background-color: transparent;
-}
-
-.container{
-  padding-top:50px;
-  display:flex;
-  max-height: 300px;
-  max-width: 100%;
-  overflow: hidden;
-
-}
-
-.card{
-  border: black solid 0px;
-}
-
-.card-img{
-  width:19rem;
-  height:200px;
-
-
-}
 
 
 /* footer css */
@@ -560,6 +644,35 @@ footer{
 }
 
 
+/* Auto Slide images */
+
+.sliding-container h2{
+  color:black;
+  padding:2rem;
+  font-weight: 600;
+  font-family: 'Montserrat',sans-serif
+}
+
+.container{
+  padding-top:50px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display:flex;
+  max-height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  top:60%;
+}
+
+.card{
+  border: black solid 0px;
+}
+
+.card-img{
+  width:19rem;
+  height:200px;
+}
+
 .card-title{
 margin-top: 5rem;
 text-align: center;
@@ -613,3 +726,8 @@ color: transparent;
   display: block;
   opacity: 0.3;
 }
+
+.gallery:hover > .img {
+  animation-play-state: paused;
+}
+
