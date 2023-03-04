@@ -28,6 +28,7 @@ nav ul li.items{
   text-align: center;
   order: 3;
 }
+
 nav ul li.items:after{
   position: absolute;
   content: '';
@@ -42,6 +43,15 @@ nav ul li.items:after{
 nav ul li.items:hover:after{
   opacity: 1;
   bottom: 8px;
+}
+
+nav ul li.items1{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  top: 21px;
+  text-align: center;
+  order: 3;
 }
 nav ul li.logo{
   flex: 1;
@@ -74,12 +84,15 @@ nav ul li.btn.hide i:before{
   nav ul li.items{
     width: 100%;
     display: none;
+    margin-bottom: 14px;
   }
   nav ul li.items.show{
     display: block;
+    height: 60px;
   }
   nav ul li.btn{
     display: block;
+
   }
   nav ul li.items:hover{
     border-radius: 5px;
@@ -89,6 +102,7 @@ nav ul li.btn.hide i:before{
   nav ul li.items:hover:after{
     opacity: 0;
   }
+  
 }
 
 .flex{
@@ -150,7 +164,6 @@ body{
 main{
   position: relative;
   width: 100%;
-  height: 100vh;
 }
 /* carousel section */
 .wrapper{
@@ -227,6 +240,11 @@ main{
   .carousel img{
     width: 100%;
   }
+  #slider-content h2{
+    font-size:110px;
+    line-height: 100px;
+    width: 25px;
+}
 }
 
 
@@ -261,8 +279,6 @@ main{
 
 #slider img{
   width: 65%;
-  max-width: 100%;
-  max-height: 80%;
   position: relative;
   z-index: 0;
   display: inline;
@@ -286,7 +302,7 @@ main{
   width: auto;
   max-width: auto;
   height: 100%;
-  margin: 0px auto;
+  margin: -118px 0;
   z-index: 3;
 
 }
@@ -297,7 +313,7 @@ main{
 #slider-content{
   padding:0 10px;
   margin-left: 6rem;
-    
+  align-items: center;
 }
 
 /* changes in this will affect the elbin part */
@@ -311,6 +327,7 @@ main{
   margin: 20px 0px 60px;
   z-index: 5;
   opacity: 1;
+  width: 45rem;
 
 }
 
@@ -333,7 +350,8 @@ main{
   font-family:Arial, Helvetica, sans-serif;
   font-size:11px;
   letter-spacing: 5px;
-  color:#f71008;
+  left: 20px;
+  color:#ffffff;
   text-transform:uppercase;
   position: relative;
   font-weight:600;
@@ -731,3 +749,23 @@ color: transparent;
   animation-play-state: paused;
 }
 
+.VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link, .VIpgJd-ZVi9od-l4eHX-hSRGPd:visited, .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover, .VIpgJd-ZVi9od-l4eHX-hSRGPd:active {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  display: none;
+}
+#google_translate_element {
+  font-family: arial;
+  font-size: 11px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.hide{
+  height: 2rem;
+  width: 11rem;
+  background-color: rgb(255, 255, 255);
+  margin-top: -29px;
+  display: inline-table;
+}
