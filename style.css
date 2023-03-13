@@ -568,7 +568,7 @@ footer{
 .left .content .social a span:hover{
   background: #f12020;
 }
-.center .content .fas{
+.left .content .fas{
   font-size: 1.4375rem;
   background: #fdfafa;
   height: 45px;
@@ -579,16 +579,16 @@ footer{
   transition: 0.3s;
   cursor: pointer;
 }
-.center .content .fas:hover{
+.left .content .fas:hover{
   background: #f12020;
 }
-.center .content .text{
+.left .content .text{
   font-size: 1.0625rem;
   font-weight: 500;
   padding-left: 10px;
   color: white;
 }
-.center .content .phone{
+.left .content .phone{
   margin: 15px 0;
 }
 
