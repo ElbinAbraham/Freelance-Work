@@ -1,0 +1,385 @@
+.nav1{
+    margin-bottom: 2rem;
+}
+
+nav{
+    background: #ffffff;
+    padding: 5px 40px;
+  }
+  nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li{
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  nav ul li.items{
+    position: relative;
+    /* width: auto; */
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+  }
+  
+  nav ul li.items:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #040404;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  nav ul li.items:hover:after{
+    opacity: 1;
+    bottom: 8px;
+  }
+  
+  nav ul li.items1{
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    top: 21px;
+    text-align: center;
+    order: 3;
+  }
+  nav ul li.logo{
+    flex: 1;
+    cursor: default;
+    user-select: none;
+  }
+  nav ul li a{
+    color: rgb(9, 9, 9);
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+  }
+  nav ul li:hover a{
+    color: rgb(13, 12, 12);
+    font-size: 18px;
+  }
+  nav ul li i{
+    font-size: 23px;
+  }
+  nav ul li.btn{
+    display: none;
+  }
+  nav ul li.btn.hide i:before{
+    content: '\f00d';
+  }
+  @media all and (max-width: 900px){
+    nav{
+      padding: 5px 30px;
+    }
+    nav ul li.items{
+      width: 100%;
+      display: none;
+      margin-bottom: 14px;
+    }
+    nav ul li.items.show{
+      display: block;
+      height: 60px;
+    }
+    nav ul li.btn{
+      display: block;
+  
+    }
+    nav ul li.items:hover{
+      border-radius: 5px;
+      box-shadow: inset 0 0 5px #0c0c0c,
+                  inset 0 0 10px #040404;
+    }
+    nav ul li.items:hover:after{
+      opacity: 0;
+    }
+    
+  }
+
+/* Flipping Cards */
+.flip-container{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1{
+    color: black !important;
+    margin:4rem;
+}
+
+.s1{
+    display:flex;
+    margin: 2rem 0px ;
+}
+
+.s2{
+    display:flex;
+    margin: 2rem 0px ;
+}
+
+img{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 50%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(251, 249, 249);
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    border: 1px solid rgb(253, 253, 253);
+    border-radius: 50%;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    width: 300px;
+    height: 300px;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(249, 247, 247);
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    body .h1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .s1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .s2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flip-card{
+      margin:2rem;
+    }
+  }
+
+/* footer css */
+.content1{
+    position: bottom;
+    margin: 0px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content1 .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  .content1 .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  footer{
+    margin-top: 3rem;
+    position: bottom;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+  }
+  .main-content{
+    display: flex;
+  }
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  .box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #f7f7f7;
+  }
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .left .content .social{
+    margin: 20px 0 0 0;
+  }
+  .left .content .social a{
+    padding: 0 2px;
+  }
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #fefafa;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .left .content .social a span:hover{
+    background: #f12020;
+  }
+  .left .content .fas{
+    font-size: 1.4375rem;
+    background: #fdfafa;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .left .content .fas:hover{
+    background: #f12020;
+  }
+  .left .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+    color: white;
+  }
+  .left .content .phone{
+    margin: 15px 0;
+  }
+  
+  .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 20px;
+    color: #656565;
+  }
+  .right form .msg{
+    margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+  }
+  .right form input:focus,
+  .right form textarea:focus{
+    outline-color: #3498db;
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btn{
+    margin-top: 10px;
+  }
+  .right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .right form .btn button:hover{
+    background: #000;
+    color: white;
+  }
+  .bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+  }
+  .bottom center span{
+    color: #656565;
+  }
+  .bottom center a{
+    color: #f12020;
+    text-decoration: none;
+  }
+  .bottom center a:hover{
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 900px) {
+    footer{
+      position: bottom;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
+
+    
