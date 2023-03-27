@@ -29,7 +29,8 @@
 
 
 
-
+/* navbar */
+/*
 nav{
   background: #ffffff;
   padding: 5px 40px;
@@ -138,7 +139,7 @@ nav ul li.btn.hide i:before{
   display: flex;
   color: black;
   padding: 1rem;
-} */
+} 
 a{
   text-decoration: none;
   color: black;
@@ -162,7 +163,7 @@ a{
   right: 5%;
   top: 3rem;
   position: absolute; 
-}*/
+}
 select{
   border:1px black;
   padding: 10px 20px;
@@ -172,6 +173,9 @@ select{
 select:focus{
   outline:none;
 }
+*/
+
+/* navbar ends */
 html{
   font-family: sans-serif;
 }
