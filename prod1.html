@@ -1,109 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="prod1.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/5b42050a39.js" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-      }
-      </script>
-      
-      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <title>AJAY EXPORT WORLD</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="prod1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5b42050a39.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+  <script src=main.js></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <title>AJAY EXPORT WORLD</title>
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <div class="nav1">
-    </head>
-      <nav>
-        <ul>
-           <li class="logo"><img src="images/logo.png"></li>
-           
-           <li class="items"><a href="#nav">Home</a></li>
-           <li class="items"><a href="#last1">About</a></li>
-           <li class="items"><a href="prod1.html">Products</a></li>
-           <li class="items"><a href="#">Contact</a></li>
-           <li class="items1">
-            <div id="google_translate_element"></div>
-            <div class="hide"></div>
-            </li>
-           <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
-        </ul>
-     </nav>
-     <script>
-        $(document).ready(function(){
-          $('.btn').click(function(){
-            $('.items').toggleClass("show");
-            $('ul li').toggleClass("hide");
-          });
+  <!-- Navbar -->
+  <div class="nav1">
+
+    <nav>
+      <ul>
+        <li class="logo"><img src="images/logo.png"></li>
+
+        <li class="items"><a href="#nav">Home</a></li>
+        <li class="items"><a href="#last1">About</a></li>
+        <li class="items"><a href="prod1.html">Products</a></li>
+        <li class="items"><a href="#">Contact</a></li>
+        <li class="items1">
+          <div id="google_translate_element"></div>
+          <div class="hide"></div>
+        </li>
+        <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
+    <script>
+      $(document).ready(function () {
+        $('.btn').click(function () {
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
         });
-     </script>
-    </div>
+      });
+    </script>
+  </div>
 
-<!-- Flipping Cards -->
-    <div class="flip-container">
-    <h1 class="h1">Our Food Products</h1>
-    <div class="s1">
-    <div class="flip-card ">
-        <div class="flip-card-inner">
-    
-            <div class="flip-card-front">
-            <img src="images/cashewnut1.jpeg" style="width:300px;height:300px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Cashewnut</h1>
-          </div>
-        </div>
-      </div>
-    <div class="flip-card ">
-        <div class="flip-card-inner">
-    
-            <div class="flip-card-front">
-            <img src="images/oils.jpeg" style="width:300px;height:300px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Oils</h1>
-          </div>
-        </div>
+  <!-- Flipping Cards -->
+  <div class="FlippingCard">
+    <div class="card" style="width:400px">
+      <img class="card-img-top prod-img" src="images/Food-Items/cashew.jpeg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">CashewNut</h4>
       </div>
     </div>
-    <div class="s2">
-    <div class="flip-card ">
-        <div class="flip-card-inner">
-    
-            <div class="flip-card-front">
-            <img src="images/spices.jpeg" style="width:300px;height:300px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Spices</h1>
-          </div>
-        </div>
-      </div>
-    <div class="flip-card ">
-        <div class="flip-card-inner">
-    
-            <div class="flip-card-front">
-            <img src="images/turmeric.jpeg" style="width:300px;height:300px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Turmeric</h1>
-          </div>
-        </div>
-      </div>
+    <div class="card" style="width:400px">
+      <img class="card-img-top prod-img" src="images/Food-Items/red-chilli.png" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Red Chilli</h4>
       </div>
     </div>
+    <div class="card" style="width:400px">
+      <img class="card-img-top prod-img" src="images/Food-Items/bay-leaf.png" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Bay Leaf</h4>
+      </div>
+    </div>
+    <div class="card" style="width:400px">
+      <img class="card-img-top prod-img" src="images/Food-Items/star-anise.png" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Star-anise</h4>
+      </div>
+    </div>
+  </div>
+  <div class="FlippingCard">
+    <div class="card" style="width:400px">
+      <img class="card-img-top prod-img" src="images/Food-Items/oils.jpeg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Oils</h4>
+      </div>
+    </div>
+    <div class="card" style="width:400px">
+      <img class="card-img-top prod-img" src="images/Food-Items/turmeric.jpeg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Turmeric</h4>
+      </div>
+    </div>
+    <div class="card" style="width:400px">
+      <img class="card-img-top prod-img" src="images/Food-Items/fennel.png" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Fennel</h4>
+      </div>
+    </div>
+    <div class="card" style="width:400px">
+      <img class="card-img-top prod-img" src="images/Food-Items/cumin.png" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Cumin</h4>
+      </div>
+    </div>
+  </div>
 
-
-<!-- footer code -->
-<footer id="last1">
+  <!-- footer code -->
+  <footer id="last1">
     <div class="main-content">
       <div class="left box">
         <div class="content">
@@ -111,33 +115,27 @@
           <div class="content">
             <div class="place">
               <a href="https://goo.gl/maps/W8hso59sn2rf6xsV6">
-                <span class="fas fa-map-marker-alt"></span
-              >
-              <span class="text">Bandr West, Mumbai</span>
+                <span class="fas fa-map-marker-alt"></span></a>
+              <span class="text">Bandra West, Mumbai</span>
             </div>
             <div class="phone">
               <a href="tel:+91-9322338575">
-                <span class="fas fa-phone"></span>
-              
+                <span class="fas fa-phone"></span></a>
+
               <span class="text">+91-9322338575</span>
             </div>
             <!-- fas fa-phone-alt -->
             <div class="email">
               <a href="mailto: aaafinadvisor@gmail.com ">
-                <span class="fas fa-envelope"></span
-              >
+                <span class="fas fa-envelope"></a></span>
               <span class="text">aaafinadvisor@gmail.com </span>
             </div>
-            </div>
+          </div>
           <div class="social">
-            <a href="https://facebook.com"
-              ><span class="fab fa-facebook-f"></span
-            >
-            <a href="#"><span class="fab fa-twitter"></span>
-            <a href="https://instagram.com"
-              ><span class="fab fa-instagram"></span
-            >
-            <a href="#"><span class="fab fa-youtube"></span>
+            <a href="https://facebook.com"><span class="fab fa-facebook-f"></a></span>
+            <a href="#https://twitter.com"><span class="fab fa-twitter"></a></span>
+            <a href="https://instagram.com"><span class="fab fa-instagram"></a></span>
+            <a href="#"><span class="fab fa-youtube"></a></span>
           </div>
         </div>
       </div>
@@ -150,16 +148,21 @@
               <input type="email" required />
             </div>
             <div class="msg">
-               <div class="text">Message *</div>
+              <div class="text">Message *</div>
               <textarea rows="2" cols="25" required></textarea>
-            </div> 
-            <div class="btn" style="margin-left: 20px;">
-              <button type="submit" style="width:387px; padding-left:10px"><a href="mailto: aaafinadvisor@gmail.com ">Send</button>
+            </div>
+            <div class="btn bat" style="margin-left: 20px;">
+              <button type="submit"><a
+                  href="mailto: aaafinadvisor@gmail.com "></a>Send</button>
             </div>
           </form>
         </div>
       </div>
     </div>
   </footer>
+
+
+
 </body>
+
 </html>

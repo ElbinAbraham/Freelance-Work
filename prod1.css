@@ -1,5 +1,7 @@
 /* navbar */
 
+
+
 .nav1{
     margin-bottom: 2rem;
 }
@@ -46,9 +48,16 @@ nav{
     position: relative;
     width: auto;
     margin: 0 16px;
-    top: 21px;
+    top: 13px;
     text-align: center;
     order: 3;
+  }
+  .goog-te-gadget{
+    font-family: sans-serif;
+    font-weight: normal !important;
+  }
+  .goog-te-gadget-simple{
+    border:none !important;
   }
   nav ul li.logo{
     flex: 1;
@@ -57,7 +66,7 @@ nav{
   }
   nav ul li a{
     color: rgb(9, 9, 9);
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
     transition: .4s;
   }
@@ -112,6 +121,37 @@ nav{
 
   /* navbar ends */
 
+  /* Scroll bar */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
   /* new navbar */
 /* nav ul li{
   list-style: none;
@@ -137,287 +177,258 @@ a:hover{
 
 
 /* Flipping Cards */
-.flip-container{
-    margin: 3rem;
+.card{
+  margin:5rem 2rem;
+}
+.FlippingCard{
+  display: flex;
+  justify-content: center;
+}
+
+.prod-img{
+  height: 13rem;
+}
+
+@media screen and (max-width: 768px){
+  .FlippingCard{
     display: flex;
     flex-direction: column;
-}
-
-.h1{
-    color: black !important;
-    margin:4rem;
-}
-
-.s1{
-    display:flex;
-    margin: 2rem 0px ;
-}
-
-.s2{
-    display:flex;
-    margin: 2rem 0px ;
-}
-
-img{
-    border: 1px solid white;
-    border-radius: 50%;
-}
-
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    border: 1px solid white;
-    border-radius: 50%;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    display: flex;
-    margin-right: 2rem;
-    margin-left: 2rem;
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgb(251, 249, 249);
-    border-radius: 50%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    border: 1px solid rgb(253, 253, 253);
-    border-radius: 50%;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
-    width: 300px;
-    height: 300px;
-    transform: rotateY(180deg);
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border: 1px solid rgb(249, 247, 247);
-    border-radius: 50%;
+    align-items: center;
   }
-
-  @media screen and (max-width: 768px) {
-    body .h1{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .s1{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .s2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .flip-card{
-      margin:2rem;
-    }
+  .card{
+    margin: 2rem 2rem;
   }
+}
+  
 
+ 
 /* footer css */
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: row;
+}
+.left-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.right-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.bat{
+  width:30vw; 
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
 .content1{
-    position: bottom;
-    margin: 0px;
-    text-align: center;
-    padding: 0 20px;
+  position: bottom;
+  margin: 0px;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  margin-top: 3rem;
+  position: bottom;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #f7f7f7;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #fefafa;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.left .content .fas{
+  font-size: 1.4375rem;
+  background: #fdfafa;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.left .content .fas:hover{
+  background: #f12020;
+}
+.left .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  color: white;
+}
+.left .content .phone{
+  margin: 15px 0;
+}
+
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 20px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  color:white;
+  background: #020202;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  textarea {
+    max-width: 100vw;
   }
-  .content1 .text{
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #202020;
-  }
-  .content1 .p{
-    font-size: 2.1875rem;
-    font-weight: 600;
-    color: #202020;
-  }
+}
+
+
+
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #0b0b0b;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+  color: white;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 900px) {
   footer{
-    margin-top: 3rem;
     position: bottom;
     bottom: 0px;
-    width: 100%;
-    background: #111;
   }
   .main-content{
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .main-content .box{
-    flex-basis: 50%;
-    padding: 10px 20px;
+    margin: 5px 0;
   }
-  .box h2{
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
-  }
-  .box .content{
-    margin: 20px 0 0 0;
-    position: relative;
-  }
-  .box .content:before{
-    position: absolute;
-    content: '';
-    top: -10px;
-    height: 2px;
-    width: 100%;
-    background: #f7f7f7;
-  }
-  .box .content:after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    background: #f12020;
-    top: -10px;
-  }
-  .left .content p{
-    text-align: justify;
-  }
-  .left .content .social{
-    margin: 20px 0 0 0;
-  }
-  .left .content .social a{
-    padding: 0 2px;
-  }
-  .left .content .social a span{
-    height: 40px;
-    width: 40px;
-    background: #fefafa;
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  .left .content .social a span:hover{
-    background: #f12020;
-  }
-  .left .content .fas{
-    font-size: 1.4375rem;
-    background: #fdfafa;
-    height: 45px;
-    width: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .left .content .fas:hover{
-    background: #f12020;
-  }
-  .left .content .text{
-    font-size: 1.0625rem;
-    font-weight: 500;
-    padding-left: 10px;
-    color: white;
-  }
-  .left .content .phone{
-    margin: 15px 0;
-  }
-  
-  .right form .text{
-    font-size: 1.0625rem;
-    margin-bottom: 20px;
-    color: #656565;
-  }
-  .right form .msg{
-    margin-top: 10px;
-  }
-  .right form input, .right form textarea{
-    width: 100%;
-    font-size: 1.0625rem;
-    background: #151515;
-    padding-left: 10px;
-    border: 1px solid #222222;
-  }
-  .right form input:focus,
-  .right form textarea:focus{
-    outline-color: #3498db;
-  }
-  .right form input{
-    height: 35px;
-  }
-  .right form .btn{
-    margin-top: 10px;
-  }
-  .right form .btn button{
-    height: 40px;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #f12020;
-    font-size: 1.0625rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s;
-  }
-  .right form .btn button:hover{
-    background: #000;
-    color: white;
-  }
-  .bottom center{
-    padding: 5px;
-    font-size: 0.9375rem;
-    background: #151515;
-  }
-  .bottom center span{
-    color: #656565;
-  }
-  .bottom center a{
-    color: #f12020;
-    text-decoration: none;
-  }
-  .bottom center a:hover{
-    text-decoration: underline;
-  }
-  @media screen and (max-width: 900px) {
-    footer{
-      position: bottom;
-      bottom: 0px;
-    }
-    .main-content{
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-    .main-content .box{
-      margin: 5px 0;
-    }
-  }
+}
 
 
-
-
-    
+.goog-te-gadget-icon{
+  display: none !important;
+}
