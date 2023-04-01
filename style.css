@@ -1,6 +1,7 @@
 html{
   font-family: sans-serif;
-  font-size: 22px
+  font-size: 22px;
+  overflow-x: hidden;
 }
 
 
