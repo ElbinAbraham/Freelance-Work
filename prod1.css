@@ -1,3 +1,11 @@
+/* main body */
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
 /* navbar */
 
 
@@ -198,6 +206,7 @@ a:hover{
   }
   .card{
     margin: 2rem 2rem;
+    max-width:80vw;
   }
 }
   
@@ -353,7 +362,7 @@ footer{
 
 .msg {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 .text {
