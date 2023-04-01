@@ -4,12 +4,31 @@ html {
   overflow-x: hidden;
 }
 
+.inner-container h1{
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  overflow-x: hidden;
+  color: #000;
+  padding:0px 2rem;
+  padding-bottom: 0rem;
+}
+
+.inner-container .text{
+  font-family: sans-serif;
+  font-size: 30px;
+  overflow-x: hidden;
+  color: #000;
+  padding:0px 2rem;
+  padding-bottom: 2rem;
+}
+
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -37,9 +56,8 @@ html {
 body {
   background-color: #fafdff;
   color: white;
-  /* margin: 0 2% 0 2%; */
   overflow-x: hidden;
-  margin-left: 0rem;
+  margin: 0px;
 }
 
 main {
@@ -101,7 +119,6 @@ nav ul li.items1 {
 }
 .goog-te-gadget {
   font-family: sans-serif;
-  font-weight: normal !important;
 }
 .goog-te-gadget-simple {
   border: none !important;
@@ -113,7 +130,7 @@ nav ul li.logo {
 }
 nav ul li a {
   color: rgb(9, 9, 9);
-  font-size: 22px;
+  font-size: 26px;
   text-decoration: none;
   transition: 0.4s;
 }
@@ -133,7 +150,11 @@ nav ul li.btn.hide i:before {
   font-size: 22px !important;
 }
 .items1 {
-  padding: 0px 0px 20px 0px;
+  padding: 15px 0px 20px 0px;
+}
+
+select{
+  border:none
 }
 
 @media all and (max-width: 768px) {
@@ -157,7 +178,7 @@ nav ul li.btn.hide i:before {
     box-shadow: inset 0 0 5px #0c0c0c, inset 0 0 10px #040404;
   }
   nav ul li.items:hover {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -168,8 +189,8 @@ nav ul li.btn.hide i:before {
   display: flex;
   max-width: auto;
   position: relative;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 .wrapper i {
   top: 50%;
@@ -341,7 +362,7 @@ nav ul li.btn.hide i:before {
 
 /* footer css */
 
-footer{
+footer {
   bottom: 0px !important;
 }
 
@@ -554,10 +575,9 @@ textarea {
 
 @media screen and (min-width: 320px) {
   .right form .btn button {
-    width: 50vw;;
+    width: 50vw;
   }
 }
-  
 
 @media screen and (max-width: 900px) {
   footer {

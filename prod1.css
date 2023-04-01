@@ -1,143 +1,137 @@
 /* main body */
-body{
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-
 /* navbar */
 
-
-
-.nav1{
-    margin-bottom: 2rem;
+.nav1 {
+  margin-bottom: 2rem;
 }
 
-nav{
-    background: #ffffff;
-    padding: 5px 40px;
+nav {
+  background: #ffffff;
+  padding: 5px 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items {
+  position: relative;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.items:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #040404;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after {
+  opacity: 1;
+  bottom: 8px;
+}
+
+nav ul li.items1 {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  top: 13px;
+  text-align: center;
+  order: 3;
+}
+.goog-te-gadget {
+  font-family: sans-serif;
+  font-weight: normal !important;
+}
+.goog-te-gadget-simple {
+  border: none !important;
+}
+nav ul li.logo {
+  flex: 1;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a {
+  color: rgb(9, 9, 9);
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+nav ul li:hover a {
+  color: rgb(13, 12, 12);
+}
+nav ul li i {
+  font-size: 23px;
+}
+nav ul li.btn {
+  display: none;
+}
+nav ul li.btn.hide i:before {
+  content: "\f00d";
+}
+.goog-te-combo {
+  font-size: 28px !important;
+}
+.items1 {
+  padding: 15px 0px 20px 0px;
+}
+
+select{
+  border:none;
+}
+
+@media all and (max-width: 768px) {
+  nav {
+    padding: 5px 30px;
   }
-  nav ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  nav ul li{
-    padding: 15px 0;
-    cursor: pointer;
-  }
-  nav ul li.items{
-    position: relative;
-    margin: 0 16px;
-    text-align: center;
-    order: 3;
-  }
-  
-  nav ul li.items:after{
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 5px;
-    height: 2px;
+  nav ul li.items {
     width: 100%;
-    background: #040404;
-    opacity: 0;
-    transition: all 0.2s linear;
-  }
-  nav ul li.items:hover:after{
-    opacity: 1;
-    bottom: 8px;
-  }
-  
-  nav ul li.items1{
-    position: relative;
-    width: auto;
-    margin: 0 16px;
-    top: 13px;
-    text-align: center;
-    order: 3;
-  }
-  .goog-te-gadget{
-    font-family: sans-serif;
-    font-weight: normal !important;
-  }
-  .goog-te-gadget-simple{
-    border:none !important;
-  }
-  nav ul li.logo{
-    flex: 1;
-    cursor: default;
-    user-select: none;
-  }
-  nav ul li a{
-    color: rgb(9, 9, 9);
-    font-size: 20px;
-    text-decoration: none;
-    transition: .4s;
-  }
-  nav ul li:hover a{
-    color: rgb(13, 12, 12);
-    
-  }
-  nav ul li i{
-    font-size: 23px;
-  }
-  nav ul li.btn{
     display: none;
+    margin-bottom: 14px;
   }
-  nav ul li.btn.hide i:before{
-    content: '\f00d';
+  nav ul li.items.show {
+    display: block;
+    height: 60px;
   }
-  .goog-te-combo{
-    font-size: 22px !important;
+  nav ul li.btn {
+    display: block;
   }
-  .items1{
-    padding: 0px 0px 20px 0px;
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #0c0c0c, inset 0 0 10px #040404;
   }
- 
-  @media all and (max-width: 768px){
-    nav{
-      padding: 5px 30px;
-    }
-    nav ul li.items{
-      width: 100%;
-      display: none;
-      margin-bottom: 14px;
-    }
-    nav ul li.items.show{
-      display: block;
-      height: 60px;
-    }
-    nav ul li.btn{
-      display: block;
-  
-    }
-    nav ul li.items:hover{
-      border-radius: 5px;
-      box-shadow: inset 0 0 5px #0c0c0c,
-                  inset 0 0 10px #040404;
-    }
-    nav ul li.items:hover{
-      opacity: 0;
-      
-    }
-    
+  nav ul li.items:hover {
+    opacity: 1;
   }
+}
 
-  /* navbar ends */
+/* navbar ends */
 
-  /* Scroll bar */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
-*{
+/* Scroll bar */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat',sans-serif;
 }
-
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -145,168 +139,141 @@ nav{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffffff; 
+  background: #ffffff;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
-
-
-
-  /* new navbar */
-/* nav ul li{
-  list-style: none;
- 
-}
-ul{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-i{
-  display: none  !important;
-}
-
-a{
-  color: black !important;
-  font-size: 20px;
-}
-a:hover{
-  font-size: 24px;
-  transition-duration: 1s;
-} */
-
 
 /* Flipping Cards */
-.card{
-  margin:5rem 2rem;
+.card {
+  margin: 5rem 2rem;
 }
-.FlippingCard{
+.FlippingCard {
   display: flex;
   justify-content: center;
 }
 
-.prod-img{
+.prod-img {
   height: 13rem;
 }
 
-@media screen and (max-width: 768px){
-  .FlippingCard{
+@media screen and (max-width: 768px) {
+  .FlippingCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .card{
+  .card {
     margin: 2rem 2rem;
-    max-width:80vw;
+    max-width: 80vw;
   }
 }
-  
 
- 
 /* footer css */
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: black;
   text-decoration: none;
 }
 
-.main-content{
+.main-content {
   display: flex;
   flex-direction: row;
 }
-.left-box{
+.left-box {
   display: flex;
   flex-direction: column;
 }
 
-.right-box{
+.right-box {
   display: flex;
   flex-direction: column;
 }
 
-.bat{
-  width:30vw; 
-  padding-left:1rem;
-  padding-right:1rem;
+.bat {
+  width: 30vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.content1{
+.content1 {
   position: bottom;
   margin: 0px;
   text-align: center;
   padding: 0 20px;
 }
-.content1 .text{
+.content1 .text {
   font-size: 2.5rem;
   font-weight: 600;
   color: #202020;
 }
-.content1 .p{
+.content1 .p {
   font-size: 2.1875rem;
   font-weight: 600;
   color: #202020;
 }
-footer{
+footer {
   margin-top: 3rem;
   position: bottom;
   bottom: 0px;
   width: 100%;
   background: #111;
 }
-.main-content{
+.main-content {
   display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.main-content .box{
+.main-content .box {
   flex-basis: 50%;
   padding: 10px 20px;
 }
-.box h2{
+.box h2 {
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
   color: white;
 }
-.box .content{
+.box .content {
   margin: 20px 0 0 0;
   position: relative;
 }
-.box .content:before{
+.box .content:before {
   position: absolute;
-  content: '';
+  content: "";
   top: -10px;
   height: 2px;
   width: 100%;
   background: #f7f7f7;
 }
-.box .content:after{
+.box .content:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   width: 15%;
   background: #f12020;
   top: -10px;
 }
-.left .content p{
+.left .content p {
   text-align: justify;
 }
-.left .content .social{
+.left .content .social {
   margin: 20px 0 0 0;
 }
-.left .content .social a{
+.left .content .social a {
   padding: 0 2px;
 }
-.left .content .social a span{
+.left .content .social a span {
   height: 40px;
   width: 40px;
   background: #fefafa;
@@ -316,10 +283,10 @@ footer{
   border-radius: 5px;
   transition: 0.3s;
 }
-.left .content .social a span:hover{
+.left .content .social a span:hover {
   background: #f12020;
 }
-.left .content .fas{
+.left .content .fas {
   font-size: 1.4375rem;
   background: #fdfafa;
   height: 45px;
@@ -330,31 +297,32 @@ footer{
   transition: 0.3s;
   cursor: pointer;
 }
-.left .content .fas:hover{
+.left .content .fas:hover {
   background: #f12020;
 }
-.left .content .text{
+.left .content .text {
   font-size: 1.0625rem;
   font-weight: 500;
   padding-left: 10px;
   color: white;
 }
-.left .content .phone{
+.left .content .phone {
   margin: 15px 0;
 }
 
-.right form .text{
+.right form .text {
   font-size: 1.0625rem;
   margin-bottom: 20px;
   color: #656565;
 }
-.right form .msg{
+.right form .msg {
   margin-top: 10px;
 }
-.right form input, .right form textarea{
+.right form input,
+.right form textarea {
   width: 100%;
   font-size: 1.0625rem;
-  color:white;
+  color: white;
   background: #020202;
   padding-left: 10px;
   border: 1px solid #222222;
@@ -362,7 +330,7 @@ footer{
 
 .msg {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .text {
@@ -379,19 +347,17 @@ textarea {
   }
 }
 
-
-
 .right form input:focus,
-.right form textarea:focus{
+.right form textarea:focus {
   outline-color: #0b0b0b;
 }
-.right form input{
+.right form input {
   height: 35px;
 }
-.right form .btn{
+.right form .btn {
   margin-top: 10px;
 }
-.right form .btn button{
+.right form .btn button {
   height: 40px;
   width: 100%;
   border: none;
@@ -400,44 +366,42 @@ textarea {
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.right form .btn button:hover{
+.right form .btn button:hover {
   background: #000;
   color: white;
 }
-.bottom center{
+.bottom center {
   padding: 5px;
   font-size: 0.9375rem;
   background: #151515;
 }
-.bottom center span{
+.bottom center span {
   color: #656565;
 }
-.bottom center a{
+.bottom center a {
   color: #f12020;
   text-decoration: none;
 }
-.bottom center a:hover{
+.bottom center a:hover {
   text-decoration: underline;
 }
 
-
 @media screen and (max-width: 900px) {
-  footer{
+  footer {
     position: bottom;
     bottom: 0px;
   }
-  .main-content{
+  .main-content {
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .main-content .box{
+  .main-content .box {
     margin: 5px 0;
   }
 }
 
-
-.goog-te-gadget-icon{
+.goog-te-gadget-icon {
   display: none !important;
 }
