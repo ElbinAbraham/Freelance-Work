@@ -244,7 +244,7 @@ select{
     position: absolute; 
     background-color: white;
     top: 48px;
-    left: 170px;
+    left: 4vw;
     z-index: 3;
   }
   #select{
