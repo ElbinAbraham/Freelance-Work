@@ -202,7 +202,7 @@ select{
     position: absolute; 
     background-color: white;
     top: 48px;
-    left: 4vw;
+    left: 24vw;
     z-index: 3;
   }
   #select{
@@ -210,6 +210,8 @@ select{
     top: 38px;
   }
 }
+
+
 @media screen and (max-width: 412px){
 
   #drop{
@@ -226,6 +228,11 @@ select{
     top: 38px;
   }
 }
+
+
+  
+
+
 
 /* navbar ends */
 
