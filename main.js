@@ -72,19 +72,17 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
+// products list
+var products = document.getElementById("products");
+var anchor = document.getElementsByClassName("anchor");
+console.log(anchor[0]);
+function func(){
+    for (let i = 0; i < anchor.length; i++) {
+        anchor[i].classList.toggle("visible");
+        products.classList.toggle("clicked");
+       
 
-
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: '', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
-    var banner = document.querySelector(".VIpgJd-ZVi9od-l4eHX-hSRGPd");
-    if (banner) {
-      banner.style.display = "none";
     }
-    var translateContainer = document.getElementsByClassName("goog-te-gadget");
-    for (let i = 0; i < elements.length; i++) {
-        if (elements[i].textContent.includes('Powered by')) {
-            translateContainer.innerHTML = translateContainer.innerHTML.replace(poweredByText, "");
-        }
-      }
-  }
+    
+}
   

@@ -1,27 +1,10 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Lora';
   font-size: 22px;
   overflow-x: hidden;
 }
 
-.inner-container h1{
-  font-family: sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  overflow-x: hidden;
-  color: #000;
-  padding:0px 2rem;
-  padding-bottom: 0rem;
-}
 
-.inner-container .text{
-  font-family: sans-serif;
-  font-size: 30px;
-  overflow-x: hidden;
-  color: #000;
-  padding:0px 2rem;
-  padding-bottom: 2rem;
-}
 
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
@@ -55,7 +38,6 @@ html {
 /* use this body styles in your code */
 body {
   background-color: #fafdff;
-  color: white;
   overflow-x: hidden;
   margin: 0px;
 }
@@ -87,10 +69,65 @@ nav ul li {
   cursor: pointer;
 }
 nav ul li.items {
+  font-family: 'Lora';
   position: relative;
   margin: 0 16px;
   text-align: center;
   order: 3;
+}
+
+#drop{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 44px;
+  left: -98px;
+}
+.anchor {
+  border: 2px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  display: none;
+  background-color: white;
+  color: black !important;
+  width: 200px ;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}
+.visible{
+display: block;
+}
+#products{
+  font-size: 26px;
+  background-color: white;
+  border: 0px;
+  text-decoration: none;
+}
+#dropdown{
+  padding: 0px;
+}
+.litag{
+  padding: 0px;
+}
+/* #products:hover{
+  display: block;
+ 
+  color: white !important;
+  width: 100px ;
+
+} */
+#dropdown{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.clicked{
+  background-color:white;
 }
 
 nav ul li.items:after {
@@ -140,6 +177,10 @@ nav ul li:hover a {
 nav ul li i {
   font-size: 23px;
 }
+
+nav ul li .items2{
+  order:3
+}
 nav ul li.btn {
   display: none;
 }
@@ -180,9 +221,156 @@ select{
   nav ul li.items:hover {
     opacity: 1;
   }
+  #drop{
+    /* display: flex;
+    flex-direction: column;
+    position: absolute; */
+    background-color: white;
+    top: 48px;
+    left: 0px;
+    z-index: 3;
+  }
+  #select{
+    position: relative;
+    top: 38px;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  #drop{
+     display: flex;
+    flex-direction: column;
+    position: absolute; 
+    background-color: white;
+    top: 48px;
+    left: 170px;
+    z-index: 3;
+  }
+  #select{
+    position: relative;
+    top: 38px;
+  }
+}
+@media screen and (max-width: 412px){
+
+  #drop{
+     display: flex;
+    flex-direction: column;
+    position: absolute; 
+    background-color: white;
+    top: 48px;
+    left: -2vw;
+    z-index: 3;
+  }
+  #select{
+    position: relative;
+    top: 38px;
+  }
 }
 
 /* navbar ends */
+
+
+/* About us section */
+.inner-container h1{
+  display: flex;
+  font-family: 'Noto Serif';
+  font-size: 50px;
+  font-weight: bold;
+  overflow-x: hidden;
+  color: #000;
+  padding:0px 2rem;
+  padding-bottom: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-container .text{
+  font-family: 'Lora';
+  font-size: 30px;
+  overflow-x: hidden;
+  color: #000;
+  padding:0px 2rem;
+  padding-bottom: 2rem;
+}
+
+p{
+  align: justify !important;
+}
+
+.inner-container{
+  display:flex;
+  flex-direction: row;
+  margin:1rem;
+}
+
+.inner-container h1{
+  width:500px !important;
+  overflow:hidden;
+}
+
+.heading{
+  margin-top:7rem;
+  font-family: 'Noto Serif';
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: red 7px solid;
+  
+}
+
+.sub-heading{
+  font-family: 'Lora';
+  padding-left: 5.5rem;
+  font-weight: 600;
+  color:rgb(62, 57, 57);
+  display: flex;
+  flex-direction: column;
+  border-top: red 3px solid;
+}
+
+@media screen and (max-width: 768px){
+  .inner-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .heading{
+    margin-top:8rem;
+    font-family: 'Noto Serif';
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: red 7px solid;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .inner-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .heading{
+    font-family: 'Noto Serif';
+    font-size: 25px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: red 7px solid;
+  }
+  .inner-container h1{
+    width:365px !important;
+    font-size:25px;
+    padding:0px;
+  }
+  .sub-heading{
+    padding-left:4rem;
+    font-size: 25px;
+  }
+
+}
+
+
 
 /* carousel section */
 .wrapper {
