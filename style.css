@@ -562,20 +562,11 @@ textarea {
   font-size: 0.9375rem;
   background: #151515;
 }
-.bottom center span {
-  color: #656565;
-}
-.bottom center a {
-  color: #f12020;
-  text-decoration: none;
-}
-.bottom center a:hover {
-  text-decoration: underline;
-}
 
-@media screen and (min-width: 320px) {
+ 
+@media screen and (min-width: 768px) {
   .right form .btn button {
-    width: 50vw;
+    width: 44vw;
   }
 }
 
@@ -590,6 +581,26 @@ textarea {
   }
   .main-content .box {
     margin: 5px 0;
+  }
+  .right form .btn button {
+    width: 73vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    position: bottom;
+    bottom: 0px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+  }
+  .right form .btn button {
+    width: 64vw;
   }
 }
 
