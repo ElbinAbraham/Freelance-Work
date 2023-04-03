@@ -77,11 +77,14 @@ nav ul li.items {
 }
 
 #drop{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 44px;
-  left: -98px;
+  padding: 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 39px;
+    left: -98px;
+    width: 200px;
+    background-color: white;
 }
 .anchor {
   border: 2px solid black;
@@ -112,7 +115,7 @@ display: block;
   padding: 0px;
 }
 .litag{
-  padding: 0px;
+  padding: 5px;
 }
 /* #products:hover{
   display: block;

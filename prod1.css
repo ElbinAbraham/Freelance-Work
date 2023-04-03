@@ -37,6 +37,7 @@ nav ul li.items {
 #drop{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: absolute;
   top: 44px;
   left: -98px;
@@ -72,13 +73,7 @@ display: block;
 .litag{
   padding: 0px;
 }
-/* #products:hover{
-  display: block;
- 
-  color: white !important;
-  width: 100px ;
 
-} */
 #dropdown{
   display: flex;
   flex-direction: column;
