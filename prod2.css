@@ -266,7 +266,7 @@ select{
 }
 
 .prod-img {
-  height: 13rem;
+  height: 23rem;
 }
 
 @media screen and (max-width: 768px) {

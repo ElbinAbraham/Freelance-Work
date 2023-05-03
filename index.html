@@ -26,7 +26,7 @@
 </head>
 <nav>
   <ul>
-    <li class="logo"><img src="images/logo.png" style="height:30%;width:40%"></li>
+    <li class="logo"><img src="images/logo.png"></li>
     <li class="items"><a href="index.html">Home</a></li>
     <li class="items"><a href="#about-us">About</a></li>
     <li class="items items2">
@@ -60,10 +60,19 @@
 </script>
 
 
-<!-- Video -->
-<div class="video-container">
-  <video id="video" src="Home Video.mp4" autoplay mutued controls loop></video>
+<!-- carousel section -->
+<div class="wrapper">
+  <i id="left" class="fa-solid fa-angle-left"></i>
+  <div class="carousel">
+    <img src="images/Food-Items/cashewnut1.jpeg" alt="img" draggable="false" />
+    <img src="images/Clothes/Denim Fabric.jpg" alt="img" draggable="false" />
+    <img src="images/Engineering-goods/Fasteners.jpg" alt="img" draggable="false" />
+    <img src="images/jewellery/Diamond Jewelry.png" alt="img" draggable="false" />
+    <img src="images/Environment-products/Paper Bag.jpg" alt="img" draggable="false" />
+  </div>
+  <i id="right" class="fa-solid fa-angle-right"></i>
 </div>
+
 
 
 
@@ -79,7 +88,7 @@
     </p>
     </div>
     <div class="about-section-1-image">
-      <img id="founder" src="images/spices1.jpg" class="img1">
+      <img id="founder" src="images/Ajaypic.png" class="img1">
       <span class="about-section-1-text-imgtext">About our Founder</span>
     </div>
   </div>
@@ -104,18 +113,13 @@
 
 
 
-<!-- carousel section -->
-<div class="wrapper">
-  <i id="left" class="fa-solid fa-angle-left"></i>
-  <div class="carousel">
-    <img src="images/Food-Items/cashewnut1.jpeg" alt="img" draggable="false" />
-    <img src="images/spices1.jpg" alt="img" draggable="false" />
-    <img src="images/Food-Items/oils1.jpg" alt="img" draggable="false" />
-    <img src="images/Food-Items/turmeric1.jpg" alt="img" draggable="false" />
-    <img src="images/marble.jpeg" alt="img" draggable="false" />
-  </div>
-  <i id="right" class="fa-solid fa-angle-right"></i>
+
+
+<!-- Video -->
+<div class="video-container">
+  <video id="video" src="Home Video.mp4" autoplay muted loop></video>
 </div>
+
 
 <!-- Auto-slide Images -->
 <div class="sliding-container">
@@ -125,16 +129,16 @@
       <div class="imgt">Cashew</div><img class="card-img" src="images/Food-Items/cashew.jpeg" alt="Card image 1">
     </a>
     <a href="" class="img">
-      <div class="imgt">Spices</div><img class="card-img" src="images/Food-Items/spices.jpeg" alt="Card image 2">
+      <div class="imgt">Jewellery</div><img class="card-img" src="images/jewellery/Jewelry.png" alt="Card image 2">
     </a>
     <a href="" class="img">
-      <div class="imgt">Turmeric</div><img class="card-img" src="images/Food-Items/turmeric.jpeg" alt="Card image 3">
+      <div class="imgt">Clothes</div><img class="card-img" src="images/Clothes/Coton Fabrics.jpg" alt="Card image 3">
     </a>
     <a href="" class="img">
-      <div class="imgt">Oils</div><img class="card-img" src="images/Food-Items/oils.jpeg" alt="Card image 4">
+      <div class="imgt">Fasteners</div><img class="card-img" src="images/Engineering-goods/Fasteners.jpg" alt="Card image 4">
     </a>
     <a href="" class="img">
-      <div class="imgt">Marble</div><img class="card-img" src="images/marble.jpeg" alt="Card image 5">
+      <div class="imgt">Marble</div><img class="card-img" src="images/Environment-products/marble.jpeg" alt="Card image 5">
     </a>
   </div>
 </div>
@@ -142,34 +146,32 @@
 <footer id="last1">
   <div class="main-content">
     <div class="left box">
-      <div class="content">
         <h2>Address</h2>
         <div class="content">
           <div class="place">
             <a href="https://goo.gl/maps/W8hso59sn2rf6xsV6">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Bandra West, Mumbai</span>
+              <span class="fas fa-map-marker-alt"></span></a>
+            <span class="text">Bandra West, Mumbai</span>
           </div>
           <div class="phone">
             <a href="tel:+91-9322338575">
-              <span class="fas fa-phone"></span>
+              <span class="fas fa-phone"></span></a>
 
-              <span class="text">+91-9322338575</span>
+            <span class="text">+91-9322338575</span>
           </div>
           <!-- fas fa-phone-alt -->
           <div class="email">
             <a href="mailto: aaafinadvisor@gmail.com ">
-              <span class="fas fa-envelope"></span>
-              <span class="text">aaafinadvisor@gmail.com </span>
+              <span class="fas fa-envelope"></a></span>
+            <span class="text">aaafinadvisor@gmail.com </span>
           </div>
         </div>
         <div class="social">
-          <a href="https://facebook.com"><span class="fab fa-facebook-f"></span>
-            <a href="#"><span class="fab fa-twitter"></span>
-              <a href="https://instagram.com"><span class="fab fa-instagram"></span>
-                <a href="#"><span class="fab fa-youtube"></span>
+          <a href="https://facebook.com"><span class="fab fa-facebook-f"></a></span>
+          <a href="#https://twitter.com"><span class="fab fa-twitter"></a></span>
+          <a href="https://instagram.com"><span class="fab fa-instagram"></a></span>
+          <a href="#"><span class="fab fa-youtube"></a></span>
         </div>
-      </div>
     </div>
     <div class="right box">
       <h2>Contact us</h2>
@@ -183,8 +185,8 @@
             <div class="text">Message *</div>
             <textarea rows="2" cols="25" required></textarea>
           </div>
-          <div class="btn" style="margin-left: 20px;">
-            <button type="submit"><a href="mailto: aaafinadvisor@gmail.com ">Send</button>
+          <div class="btn bat" style="margin-left: 20px;">
+            <button type="submit"><a href="mailto: aaafinadvisor@gmail.com "></a>Send</button>
           </div>
         </form>
       </div>

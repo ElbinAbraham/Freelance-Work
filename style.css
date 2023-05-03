@@ -5,10 +5,7 @@ html {
 }
 
 
-#video{
-  width: 80vw;
-  margin: 0 10vw;
-}
+
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
 * {
@@ -80,14 +77,16 @@ nav ul li.items {
 }
 
 #drop{
-  padding: 0px;
+    padding-left: 0px;
+    padding-right: 1px;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 39px;
-    left: -98px;
-    width: 200px;
+    left: -64px;
+    width: 210px;
     background-color: white;
+    z-index: 3;
 }
 .anchor {
   border: 3px solid black;
@@ -96,7 +95,7 @@ nav ul li.items {
   list-style: none;
   list-style-type: none;
   display: none;
-  background-color: white;
+  background-color: transparent;
   color: black !important;
   width: 200px ;
 }
@@ -110,7 +109,7 @@ display: block;
 }
 #products{
   font-size: 26px;
-  background-color: white;
+  background-color: transparent;
   border: 0px;
   text-decoration: none;
 }
@@ -133,7 +132,7 @@ display: block;
   position: relative;
 }
 .clicked{
-  background-color:white;
+  background-color:transparent;
 }
 
 nav ul li.items:after {
@@ -290,6 +289,7 @@ flex-direction:row;
   flex-direction:column;
   padding-top: 7vh;
   width: 50%;
+  z-index:0;
 }
 .about-section-1-text{
   width: 50%;
@@ -306,7 +306,7 @@ flex-direction:row;
   overflow-x: hidden;
   color: #000;
   padding: 6vw 0;
-  padding-left: 3vw;
+  padding-left: 5vw;
 }
 
 .about-section-1 p{
@@ -314,10 +314,12 @@ flex-direction:row;
 }
 
 #founder{
-  width:80%;
+  width:100%;
   height:80%;
   padding-bottom:2vh;
-  padding-left: 6vw;
+  padding-left: 7vw;
+  padding-right: 5vw;
+  z-index: 0;
 }
 
 .inner-container{
@@ -344,7 +346,7 @@ flex-direction:row;
   font-size: 30px;
   overflow-x: hidden;
   color: #000;
-  padding:0px 2rem;
+  padding:0px 4vw;
   padding-bottom: 2rem;
 }
 
@@ -379,7 +381,15 @@ p{
   border-top: red 3px solid;
 }
 
+#video{
+  width: 80vw;
+  margin: 0 10vw;
+}
+
 @media screen and (max-width: 768px){
+  .logo{
+    width:40%;
+  }
   .inner-container{
     display: flex;
     flex-direction: column;
@@ -391,6 +401,17 @@ p{
     display: flex;
     flex-direction: column;
     padding-bottom: red 7px solid;
+  }
+  .about-section-1{
+    display: flex;
+    flex-direction:column;
+  }
+  .about-section-1-text{
+    width: 100%;
+    padding-left: 4vw;
+  }
+  .about-section-1-image{
+    width: 100%;
   }
 }
 
@@ -548,7 +569,7 @@ p{
 }
 .gallery {
   padding-bottom: 3rem;
-  --d: 9s;
+  --d: 15s;
   display: grid;
   overflow: hidden;
   width: auto;
@@ -572,6 +593,8 @@ p{
 .gallery > .img:nth-child(5) {
   animation-delay: calc(4 * var(--d) / -5);
 }
+
+
 
 @keyframes r {
   75% {
@@ -598,10 +621,6 @@ p{
 }
 
 /* footer css */
-
-footer {
-  bottom: 0px !important;
-}
 
 a:link,
 a:visited {
@@ -690,13 +709,13 @@ footer {
 .left .content p {
   text-align: justify;
 }
-.left .content .social {
+.left .social {
   margin: 20px 0 0 0;
 }
-.left .content .social a {
+.left .social a {
   padding: 0 2px;
 }
-.left .content .social a span {
+.left .social a span {
   height: 40px;
   width: 40px;
   background: #fefafa;
@@ -706,7 +725,7 @@ footer {
   border-radius: 5px;
   transition: 0.3s;
 }
-.left .content .social a span:hover {
+.left .social a span:hover {
   background: #f12020;
 }
 .left .content .fas {
@@ -720,7 +739,7 @@ footer {
   transition: 0.3s;
   cursor: pointer;
 }
-.left .content .fas:hover {
+.left .fas:hover {
   background: #f12020;
 }
 .left .content .text {
@@ -782,6 +801,7 @@ textarea {
 }
 .right form .btn button {
   height: 40px;
+  width: 100%;
   border: none;
   outline: none;
   background: #f12020;
@@ -799,8 +819,18 @@ textarea {
   font-size: 0.9375rem;
   background: #151515;
 }
+.bottom center span {
+  color: #656565;
+}
+.bottom center a {
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover {
+  text-decoration: underline;
+}
 
- 
+
 @media screen and (min-width: 768px) {
   .right form .btn button {
     width: 44vw;
